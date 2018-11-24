@@ -8,11 +8,14 @@ https://www.aiascoin.com/
 
 ## Default port 10721
 
-`docker run -d -p 10721:10721 -e IP=1.2.3.4 -e KEY=mastenode-private-key delfer/aias-masternode`
+`docker run -d -n aias-mn -p 10721:10721 -e IP=1.2.3.4 -e KEY=mastenode-private-key delfer/aias-masternode`
 
 ## Custom port
 
-`docker run -d -p 10722:10721 -e IP=1.2.3.4 -e KEY=mastenode-private-key -e PORT=10722 delfer/aias-masternode`
+`docker run -d -n aias-mn -p 10722:10721 -e IP=1.2.3.4 -e KEY=mastenode-private-key -e PORT=10722 delfer/aias-masternode`
+
+## Status
+`docker exec -ti aias-mn aias-cli -rpcuser=aias-masternode-docker -rpcpassword=unsecurepassword masternode status`
 
 ## Data
 
