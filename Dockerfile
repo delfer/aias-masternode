@@ -38,10 +38,11 @@ CMD [ \
     -masternode=1 \
     -masternodeprivkey=${KEY} \
     -masternodeaddr=${IP}:${PORT:-10721} \
+    -addnode=${ADD_NODE:-85.214.41.24} \
     -rpcallowip=0.0.0.0/0 \
     -rpcport=10720 \
     -rpcuser=aias-masternode-docker \
     -rpcpassword=${RPC_PASSWORD:-unsecurepassword} \
-    -debug" \
+    -printtoconsole=1" \
 ]
 
