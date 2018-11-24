@@ -44,6 +44,7 @@ CMD [ \
     -addnode=85.214.41.24 \
     -addnode=45.32.76.59 \
     -addnode=188.166.90.4 \
+    -dnsseed=0 \
     -rpcallowip=0.0.0.0/0 \
     -rpcport=10720 \
     -rpcuser=aias-masternode-docker \
